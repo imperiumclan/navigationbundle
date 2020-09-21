@@ -1,0 +1,13 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+
+  ICS\NavigationBundle\Controller\:
+    resource: "../../Controller"
+    tags: ['controller.service_arguments']
+
+  ICS\NavigationBundle\Twig\:
+    resource: "../../Twig"
+    public: false
+    tags: ['twig.extension']

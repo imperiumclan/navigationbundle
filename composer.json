@@ -1,0 +1,24 @@
+{
+    "name": "ICS/NavigationBundle",
+    "description": "Bundle de gestion de la navigation",
+    "type": "symfony-bundle",
+    "version": "1.0.0",
+    "licence": "MIT",
+    "autoload": {
+        "psr-4": {
+            "ICS\\NavigationBundle\\" : "/"
+        }
+    },
+    "require": {
+        "php": "^7.2.5",
+        "symfony/flex": "^1.3.1",
+        "symfony/twig-pack": "*",
+        "symfony/yaml": "5.1.*"
+    },
+    "scripts": {
+        "auto-scripts": {
+            "cache:clear": "symfony-cmd",
+            "assets:install %PUBLIC_DIR%": "symfony-cmd"
+        }
+    }
+}
