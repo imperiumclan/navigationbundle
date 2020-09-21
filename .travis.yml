@@ -51,7 +51,7 @@ matrix:
 # Define an environment variable
 env:
  - SYMFONY_VERSION="5.1.*" DB=mysql
- - GITHUB_TOKEN="GITHUBTOKEN"
+ 
 
 # Update composer
 before-install:
@@ -67,9 +67,9 @@ script:
 
 deploy:
   provider: pages:git
-  level : stable
   # ⋮
   edge: true
+  GITHUB_TOKEN: "GITHUBTOKEN"
 
 # After a build, send email notification with the build results
 notifications:
