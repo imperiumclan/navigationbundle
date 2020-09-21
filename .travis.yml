@@ -67,7 +67,7 @@ script:
 
 deploy:
   provider: releases
-  token: ${{ secrets.GITHUBTOKEN }}
+  token: ${{GITHUB_TOKEN}}
   edge: true # opt in to dpl v2
   on:
     tags: true
