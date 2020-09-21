@@ -1,4 +1,6 @@
 # Imperium Clan - Navigation Bundle
+[![Build Status](https://api.travis-ci.com/imperiumclan/navigationbundle.svgg?branch=master)](https://travis-ci.org/imperiumclan/navigationbundle)
+
 This bundle provide Bootstrap Navigation bar configure in config files
 
 ## Installation
