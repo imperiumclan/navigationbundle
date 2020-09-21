@@ -2,7 +2,7 @@
     "name": "imperiumclan/navigation-bundle",
     "description": "Bootstrap Navigation Management with twig extension.",
     "type": "symfony-bundle",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "license": "MIT",
     "autoload": {
         "psr-4": {
