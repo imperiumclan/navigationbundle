@@ -11,7 +11,34 @@ $ composer require imperiumclan/navigation-bundle
 
 ## Documentation
 
-In progress
+### Configuration
+
+```yaml
+navigation:
+  navbars:
+    mainnav:
+      brand: BrandText
+      brandIcon: fa fa-check
+      color: dark
+      fixed: sticky
+      searchenabled: true
+      searchroute: homepage
+      items:
+        homepage:
+          lib: homepage
+          icon: fa fa-home
+          route: homepage
+
+  usermenu:
+    activate: true
+    connexionroute: homepage
+    autolib: false
+    childs:
+      logout:
+        lib: Sign-out
+        icon: fa fa-sign-out
+        route: homepage
+```
 
 ## License
 
