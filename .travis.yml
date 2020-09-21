@@ -64,6 +64,12 @@ install:
 script:
   - phpunit --version
 
+deploy:
+  provider: "GitHub Releases"
+  level : stable
+  # ⋮
+  edge: true
+
 # After a build, send email notification with the build results
 notifications:
  email: imperium.emperor@gmail.com
