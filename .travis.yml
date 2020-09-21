@@ -6,7 +6,6 @@ language: php
 
 php:
  - 7.3
- - hhvm
 
 # Commands to be run before your environment runs.
 
@@ -18,16 +17,11 @@ before_script:
 
 # Commands you want to run that will verify your build.
 
-script: phpunit
-
 # allow_failures: Allow this build to fail under the specified environments.
 
 # fast_finish: If your build fails do not continue trying to build, just stop.
 
 matrix:
-
- allow_failures:
-   - php: hhvm
 
  fast_finish: true
 
@@ -43,10 +37,6 @@ language: php
 # Allows use container-based infrastructure
 sudo: false
 
-# Start mysql service
-services:
- - mysql
-
 # Cache composer packages so "composer install" is faster
 cache:
  directories:
@@ -58,9 +48,6 @@ matrix:
  fast_finish: true
  include:
    - php: 7.3
-   - php: hhvm
- allow_failures:
-   - php: hhvm
 
 # Define an environment variable
 env:
@@ -74,10 +61,6 @@ before-install:
 # Create database, schema and fixtures
 install:
  - composer install
-
-# Run script
-script:
- - phpunit
 
 # After a build, send email notification with the build results
 notifications:
