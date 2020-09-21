@@ -35,7 +35,8 @@
         "symfony/string": "^5.0",
         "symfony/translation": "^4.4|^5.0",
         "symfony/twig-bundle": "^4.4|^5.0",
-        "symfony/uid": "^5.1"
+        "symfony/uid": "^5.1",
+        "phpunit/phpunit": "^9.3"
     },
     "scripts": {
         "auto-scripts": {

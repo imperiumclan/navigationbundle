@@ -76,8 +76,8 @@ install:
  - composer install
 
 # Run script
-# script:
-#  - phpunit
+script:
+ - phpunit
 
 # After a build, send email notification with the build results
 notifications:
