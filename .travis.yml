@@ -66,10 +66,11 @@ script:
   - phpunit --version
 
 deploy:
-  provider: pages:git
-  # ⋮
-  edge: true
-  GITHUB_TOKEN: "GITHUBTOKEN"
+  provider: releases
+  token: ${{ secrets.GITHUBTOKEN }}
+  edge: true # opt in to dpl v2
+  on:
+    tags: true
 
 # After a build, send email notification with the build results
 notifications:
