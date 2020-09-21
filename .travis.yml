@@ -51,6 +51,7 @@ matrix:
 # Define an environment variable
 env:
  - SYMFONY_VERSION="5.1.*" DB=mysql
+ - GITHUB_TOKEN="GITHUBTOKEN"
 
 # Update composer
 before-install:
@@ -65,7 +66,7 @@ script:
   - phpunit --version
 
 deploy:
-  provider: "GitHub Releases"
+  provider: pages:git
   level : stable
   # ⋮
   edge: true
