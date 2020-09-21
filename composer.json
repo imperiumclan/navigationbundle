@@ -1,6 +1,6 @@
 {
-    "name": "ICS/NavigationBundle",
-    "description": "Bundle de gestion de la navigation",
+    "name": "imperiumclan/navigation-bundle",
+    "description": "Bootstrap Navigation Management",
     "type": "symfony-bundle",
     "version": "1.0.0",
     "licence": "MIT",
@@ -13,7 +13,7 @@
         "php": "^7.2.5",
         "symfony/flex": "^1.3.1",
         "symfony/twig-pack": "*",
-        "symfony/yaml": "5.1.*"
+        "symfony/yaml": "^5.1.5"
     },
     "scripts": {
         "auto-scripts": {
