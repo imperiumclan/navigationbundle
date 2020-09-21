@@ -3,7 +3,7 @@
     "description": "Bootstrap Navigation Management",
     "type": "symfony-bundle",
     "version": "1.0.0",
-    "licence": "MIT",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "ICS\\NavigationBundle\\" : "/"
