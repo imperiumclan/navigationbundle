@@ -5,7 +5,7 @@ This bundle provide Bootstrap Navigation bar configure in config files
 
 ## Installation
 
-EasyAdmin 3 requires PHP 7.2 or higher and Symfony 5.1 or higher. Run the following command to install it in your application:
+Navigation Bundle requires PHP 7.2 or higher and Symfony 4.4 or higher. Run the following command to install it in your application:
 
 ```
 $ composer require imperiumclan/navigation-bundle
