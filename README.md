@@ -16,6 +16,9 @@ $ composer require imperiumclan/navigation-bundle
 ### Configuration
 
 ```yaml
+
+# config/packages/navigation.yaml
+
 navigation:
   navbars:
     mainnav:
@@ -41,6 +44,15 @@ navigation:
         icon: fa fa-sign-out
         route: homepage
 ```
+And Add renderer in your base.html.twig
+
+```twig
+{# templates/base.html.twig #}
+
+<body>
+        {{ renderNavBar('mainnav') }}
+```
+
 
 ## License
 

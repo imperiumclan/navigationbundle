@@ -88,7 +88,7 @@ class NavBarExtension extends AbstractExtension
 
             $searchEnabled=$navigation['navbars'][$navName]['searchenabled'];
             $searchRoute=$navigation['navbars'][$navName]['searchroute'];
-
+            $usermenuEnabled=$navigation['navbars'][$navName]['usermenuenabled'];
         }
 
         $userMenu=[];
@@ -99,7 +99,7 @@ class NavBarExtension extends AbstractExtension
         $userMenuConnexionRoute="";
         $userMenuConnexionIcon="";
 
-        if($navigation['usermenu']['activate'])
+        if($navigation['usermenu']['activate'] && $usermenuEnabled)
         {
             $userMenu=$navigation['usermenu']['childs'];
             $userMenuActivate=$navigation['usermenu']['activate'];
@@ -131,6 +131,7 @@ class NavBarExtension extends AbstractExtension
             'NavigationUserMenuConnexionRoute' => $userMenuConnexionRoute,
             "NavigationSearchEnabled" => $searchEnabled,
             "NavigationSearchRoute" => $searchRoute,
+            "NavigationUsermenuEnabled" => $usermenuEnabled
 
         ));
     }

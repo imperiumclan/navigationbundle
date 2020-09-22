@@ -81,7 +81,7 @@
 
             {% endfor %}
         </ul>
-        {% if NavigationUserMenuActivate %}
+        {% if NavigationUserMenuActivate and NavigationUsermenuEnabled %}
             <ul class="navbar-nav float-right">
                 {% if app.user %}
                     <li class="nav-item dropdown">

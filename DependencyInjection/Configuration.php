@@ -47,6 +47,7 @@ class Configuration implements ConfigurationInterface
                         ->scalarNode('brandImage')->defaultValue('')->end()
                         ->booleanNode('searchenabled')->defaultValue(false)->end()
                         ->scalarNode('searchroute')->defaultValue('search')->end()
+                        ->booleanNode('usermenuenabled')->defaultValue(false)->end()
                         ->enumNode('color')
                             ->values(['primary','secondary','success','danger','warning','info','light','dark','white','transparent'])
                             ->defaultValue('light')
